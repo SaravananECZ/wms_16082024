@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans antialiased">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-xl font-bold">Warehouse</div>
+            <div class="flex items-center space-x-4">
+                <span class="text-gray-800">Matthew</span>
+                
+                <img src="https://via.placeholder.com/40" alt="Profile Picture" class="rounded-full w-10 h-10">
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mx-auto mt-10 flex">
+        <!-- Sidebar -->
+        <div class="w-1/4 bg-white shadow-md rounded-md p-4">
+            <ul>
+                <li class="text-red-500 font-semibold mb-4"><a href="#">Profile</a></li>
+                <li class="text-gray-600 mb-4"><a href="#">Subscription & Billing</a></li>
+                <li class="text-gray-600 mb-4"><a href="#">Password</a></li>
+                <li class="text-gray-600 mb-4"><a href="#">Notifications</a></li>
+                <li class="text-gray-600 mb-4"><a href="#">My Archive</a></li>
+                <li class="text-gray-600 mb-4"><a href="#">Warehouse Listings</a></li>
+            </ul>
+        </div>
+
+        <!-- Warehouse Listings -->
+        <div class="w-3/4 bg-white shadow-md rounded-md p-6 ml-6">
+            <h2 class="text-2xl font-semibold mb-6">Warehouse Listings</h2>
+            <div class="grid grid-cols-3 gap-6">
+                <div class="bg-white shadow-md rounded-md overflow-hidden">
+                    <img src="https://via.placeholder.com/150" alt="Warehouse 1" class="w-full h-32 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold">Warehouse 1</h3>
+                        <p class="text-gray-600 text-sm">Location: New York</p>
+                        <p class="text-gray-600 text-sm">Size: 1000 sqft</p>
+                        <a href="#" class="text-blue-500 underline mt-4 block">View Details</a>
+                    </div>
+                </div>
+                <!-- Repeat for other warehouses -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-10">
+        <div class="bg-black text-white py-4 text-center">
+            <p>Upgrade to see all job recommendations and apply</p>
+            <button class="bg-red-500 text-white px-4 py-2 rounded mt-2">Upgrade to Pro</button>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Warehouse Registration</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-4xl">
+        <h1 class="text-2xl font-bold mb-6 text-gray-800 text-center">
+            Warehouse Registration
+        </h1>
+
+        <form method="post">
+            {% csrf_token %}
+            <!-- Company Details -->
+            <div id="step-2" class="step">
+                <h2 class="text-xl font-semibold mb-4 text-gray-700">
+                    Warehouse Details
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="mb-4">
+                        <label
+                            for="WDRANumber_WCU"
+                            class="block text-gray-700 font-medium mb-2"
+                        >WDRA Number</label>
+                        <input
+                            type="text"
+                            id="WDRANumber_WCU"
+                            name="WDRANumber_WCU"
+                            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                            required
+                        />
+                    </div>
+                    <div class="mb-4">
+                        <label
+                            for="AadharNumber_WCU"
+                            class="block text-gray-700 font-medium mb-2"
+                        >Aadhar Number</label>
+                        <input
+                            type="text"
+                            id="AadharNumber_WCU"
+                            name="AadharNumber_WCU"
+                            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                            required
+                        />
+                    </div>
+                    <div class="mb-4">
+                        <label
+                            for="CompanyName_WCU"
+                            class="block text-gray-700 font-medium mb-2"
+                        >Company Name</label>
+                        <input
+                            type="text"
+                            id="CompanyName_WCU"
+                            name="CompanyName_WCU"
+                            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                        />
+                    </div>
+                    <div class="mb-4">
+                        <label
+                            for="PanNumber_WCU"
+                            class="block text-gray-700 font-medium mb-2"
+                        >PAN Number</label>
+                        <input
+                            type="text"
+                            id="PanNumber_WCU"
+                            name="PanNumber_WCU"
+                            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                        />
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label
+                            for="Emailid_WCU"
+                            class="block text-gray-700 font-medium mb-2"
+                        >Email ID</label>
+                        <input
+                            type="email"
+                            id="Emailid_WCU"
+                            name="Emailid_WCU"
+                            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                        />
+                    </div>
+                    <div class="mb-4">
+                        <label
+                            for="Contact_WCU"
+                            class="block text-gray-700 font-medium mb-2"
+                        >Contact Details</label>
+                        <input
+                            type="text"
+                            id="Contact_WCU"
+                            name="Contact_WCU"
+                            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                        />
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label
+                        for="Address_WCU"
+                        class="block text-gray-700 font-medium mb-2"
+                    >Address</label>
+                    <textarea
+                        id="Address_WCU"
+                        name="Address_WCU"
+                        rows="2"
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                    ></textarea>
+                </div>
+                
+                <div class="flex justify-end">
+                    <button
+                        type="submit"
+                        class="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                    >
+                        Submit
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
